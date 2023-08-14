@@ -1,0 +1,44 @@
+.modal-container {
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .remove-msg {
+    color: red;
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  .modal-close {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background: #3a3ae4;
+  }
+  .modal-close button {
+    background: #3c93db;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .title{
+    background: #3a3ae4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .btn-remove-cell{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+  }

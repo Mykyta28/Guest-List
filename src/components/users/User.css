@@ -1,0 +1,61 @@
+.user-item {
+    margin: 1rem 0;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    box-shadow: 0 2px 8px rgba(50, 50, 50, 0.25);
+    border-radius: 8px;
+    color: white;
+    padding: 1rem 2rem;
+    transition: transform .3s ease-in-out;
+  }
+  .user-item:hover{
+    transform: scale(1.05);
+  }
+
+  li{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-cell{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+  }
+  
+  .btn-delete-style{
+    background: #008cff;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .1s ease;
+  }
+  .btn-delete-style:hover{
+    background-color: red;
+  }
+
+  .btn-edit-style{
+    background: #008cff;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .1s ease;
+  }
+  .btn-edit-style:hover{
+    background-color: rgb(255, 0, 0)
+  }
+  .btn-info-style{
+    background: #008cff;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .1s ease;
+  }
+  .btn-info-style:hover{
+    background-color: rgb(255, 0, 0)
+  }

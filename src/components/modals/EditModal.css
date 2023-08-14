@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.edit-container{
+    max-width: 400px;
+    background: #fff;
+    width: 400px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    height: 300px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #fff;
+}
+.edit-container .edit-text{
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.edit-container form{
+  padding: 30px 0 0 0;
+}
+.edit-container form .edit-form-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-around;
+    margin: -20px;
+}
+form .edit-form-row .edit-input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .edit-form-row{
+  height: 70px;
+}
+.edit-input-data input{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+
+.edit-input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.edit-input-data .edit-underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.edit-input-data .edit-underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.edit-input-data input:focus ~ .edit-underline:before{
+  transform: scale(1);
+}
+
+.edit-input-data input ~ label, .textarea textarea:focus ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+
+.edit-btn-cell{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.edit-btn {
+  width: 100px;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  
+}
+.edit-btn:hover{
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+
+.edit-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+@media (max-width: 700px) {
+  .edit-container .edit-text{
+    font-size: 30px;
+  }
+  .edit-container form{
+    padding: 10px 0 0 0;
+  }
+  .edit-container form .edit-form-row{
+    display: block;
+  }
+  form .edit-form-row .edit-input-data{
+    margin: 35px 0!important;
+  }
+  .edit-btn .edit-input-data{
+    width: 40%!important;
+  }
+}
